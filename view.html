@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HiepMovie</title>
+
+    <link rel="stylesheet" href="./css/view.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+<header class="navbar">
+
+    <div class="logo">HIEPMOVIE</div>
+
+    <div class="nav-right">
+
+        <select id="language">
+            <option>Tiếng Việt</option>
+            <option>English</option>
+        </select>
+
+        <button
+            class="login-btn"
+            onclick="goToLogin()"
+        >
+            Đăng nhập
+        </button>
+
+    </div>
+
+</header>
+
+
+    <!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Phim hay.<br>
+            Chuyện hay.<br>
+            Xem ngay hôm nay.
+        </h1>
+
+        <!-- <p class="price">
+            Giá từ 74.000 ₫. Hủy bất kỳ lúc nào.
+        </p> -->
+
+        <p class="description">
+            Thưởng thức "hàng nghìn" bộ phim,
+            chương trình truyền hình và nội dung
+            độc quyền mọi lúc, mọi nơi.
+        </p>
+
+        <button
+            class="hero-login"
+            onclick="goToLogin()"
+        >
+            Đăng nhập để bắt đầu
+            <span>›</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- TRENDING -->
+    <section class="section">
+
+        <h2>Hiện đang thịnh hành</h2>
+
+        <div class="movies">
+
+            <div class="movie movie-1">
+                <span class="number">1</span>
+                <span class="movie-name">Spider Man: Brand New Day</span>
+            </div>
+
+            <div class="movie movie-2">
+                <span class="number">2</span>
+                <span class="movie-name">Chiikawa</span>
+            </div>
+
+            <div class="movie movie-3">
+                <span class="number">3</span>
+                <span class="movie-name">The Backrooms</span>
+            </div>
+
+            <div class="movie movie-4">
+                <span class="number">4</span>
+                <span class="movie-name">Coco</span>
+            </div>
+
+            <div class="movie movie-5">
+                <span class="number">5</span>
+                <span class="movie-name">Trại Buôn Người</span>
+            </div>
+
+            <div class="movie movie-6">
+                <span class="number">6</span>
+                <span class="movie-name">Michael</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REASONS -->
+    <section class="section">
+
+        <h2>Thêm lý do để tham gia</h2>
+
+        <div class="reasons">
+
+            <div class="reason-card">
+                <div class="icon">📺</div>
+
+                <h3>
+                    Thưởng thức trên TV
+                    của bạn
+                </h3>
+
+                <p>
+                    Smart TV, máy chơi game,
+                    Chromecast, Apple TV và
+                    nhiều thiết bị khác.
+                </p>
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="icon">⬇️</div>
+
+                <h3>
+                    Tải xuống nội dung
+                    để xem ngoại tuyến
+                </h3>
+
+                <p>
+                    Lưu những bộ phim yêu thích
+                    và xem mọi lúc, ngay cả khi
+                    không có mạng.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="icon">🌍</div>
+
+                <h3>
+                    Xem ở mọi nơi
+                </h3>
+
+                <p>
+                    Phát trực tuyến không giới hạn
+                    trên điện thoại, máy tính bảng
+                    và máy tính.
+                </p>
+
+            </div>
+
+
+            <div class="reason-card">
+
+                <div class="icon">👨‍👩‍👧</div>
+
+                <h3>
+                    Tạo hồ sơ cho trẻ em
+                </h3>
+
+                <p>
+                    Không gian riêng cho trẻ với
+                    nội dung phù hợp và an toàn.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section faq-section">
+
+        <h2>Câu hỏi thường gặp</h2>
+
+
+        <div class="faq">
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    HiepMovie là gì?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    HiepMovie là giao diện website streaming
+                    được thiết kế theo phong cách hiện đại.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Tôi có thể xem trên thiết bị nào?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Bạn có thể sử dụng điện thoại,
+                    máy tính bảng, laptop và TV.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Tôi có thể hủy bất kỳ lúc nào không?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Có. Bạn có thể hủy thành viên
+                    bất kỳ lúc nào.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button onclick="toggleFAQ(this)">
+                    Có thể tải phim để xem offline không?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Có, nội dung hỗ trợ có thể được
+                    tải xuống để xem ngoại tuyến.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+<section class="cta">
+
+    <h2>
+        Sẵn sàng bắt đầu?
+    </h2>
+
+    <p>
+        Nhập email để bắt đầu trải nghiệm.
+    </p>
+
+    <form class="email-form">
+
+        <input
+            type="email"
+            placeholder="Địa chỉ email"
+        >
+
+        <button>
+            Bắt đầu
+        </button>
+
+    </form>
+
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 HIEPMOVIE.
+        </p>
+
+    </footer>
+
+
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal">
+
+        <div class="modal-box">
+
+            <button
+                class="close"
+                onclick="closeLogin()"
+            >
+                ×
+            </button>
+
+            <h2>Đăng nhập</h2>
+
+            <input
+                type="email"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                placeholder="Mật khẩu"
+            >
+
+            <button
+                class="modal-login"
+                onclick="login()"
+            >
+                Đăng nhập
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="./js/view.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HiepMovie - Đăng nhập</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <div class="logo">HIEPMOVIE</div>
+
+    <div class="login-box">
+      <form action="#">
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="Email" id="email" />
+
+        <input type="password" placeholder="Mật khẩu" id="password" />
+        <button>
+          Sign up
+        </button>
+
+        <div class="signup">
+          Already have an account?
+          <a href="./login.html">Sign In</a>
+        </div>
+
+        <div class="signup">
+          <a href="./forgot.html">Forgot Password</a>
+        </div>
+        <div class="signup">
+          This page is protected by Hiep to ensure you're not a bot.
+          <a href="#">Learn More</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.16.0/firebase-app-compat.min.js" integrity="sha512-gCJuoyvPlJMaTPkYPfyfEt1KYPvoEE9PgGHlOU+Qtg+kLbBfEbiiim4PDj2ATWLc6BN0irZnNbdgzCtX53vjXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.16.0/firebase-firestore-compat.min.js" integrity="sha512-Xxpv+NpwNyir+77oEME5XeixRoRLrI4eY0bBZSMHgWLEFbc0f+JP4Nax3t/qDuYg1hgWrSl8pUapb+AO5Lp1jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.16.0/firebase-storage-compat.min.js" integrity="sha512-l/ieVoEShBQI9lKOdMY4AAV9rzEE5YHKF8XB4m3Qn3DtK9AhYSOgyDWrL2XH1lhKS4Fde+PNoDiBoT7UhcP23A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/12.16.0/firebase-auth-compat.min.js" integrity="sha512-PgwIBKz/MWPvQvKq7MUWB5x5aCyiiXTnAtbUGqbBvylcD/oASXh8wap5g1lWpzPmNraLXWzuWx8bkZ+reKYoyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Javascript connection -->
+    <script src="./js/firebase-config.js"></script>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 1000;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-right: 40px;
+}
+
+nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+nav a.active,
+nav a:hover {
+  color: #fff;
+}
+
+.page-title {
+  padding: 40px 50px 20px;
+}
+
+.page-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.settings {
+  padding: 10px 50px 60px;
+  max-width: 900px;
+}
+
+.setting-card {
+  background: #1f1f1f;
+  border-radius: 6px;
+  padding: 25px 30px;
+  margin-bottom: 20px;
+}
+
+.setting-card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.setting-item:last-child {
+  border-bottom: none;
+}
+
+.setting-item span {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+/* ===== INPUTS ===== */
+select,
+input[type="checkbox"] {
+  background: #000;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.switch {
+  position: relative;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #333;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  top: 2px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #e50914;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.danger-btn {
+  background: #e50914;
+  border: none;
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.danger-btn:hover {
+  background: #f6121d;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+.setting-item a {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+ color: #e50914; 
+}

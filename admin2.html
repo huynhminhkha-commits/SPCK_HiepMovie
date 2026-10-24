@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIEPMOVIE - Admin Portal</title>
+    <link rel="stylesheet" href="./css/admin2.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div>
+            <div class="logo-area">
+                <div class="logo-box">H</div>
+                <div class="logo-text">
+                    <h2>HIEPMOVIE</h2>
+                    <span>ADMIN PORTAL</span>
+                </div>
+            </div>
+
+            <ul class="menu-list">
+                <button class="menu-item">Tổng quan</button>
+                <button class="menu-item active">Quản lý Phim</button>
+                <button class="menu-item">Quản lý Người dùng</button>
+                <button class="menu-item">
+                    <a href="./settingA2.html">Cài đặt hệ thống</a></button>
+            </ul>
+        </div>
+
+        <div class="admin-profile">
+            <div class="avatar">H</div>
+            <div class="admin-info">
+                <h4>Hiep Admin</h4>
+                <p>Owner</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header-title">
+            <h1>Quản lý kho phim & Nội dung</h1>
+            <p>Hệ thống phân phối video, danh mục và cập nhật trạng thái chiếu HIEPMOVIE.</p>
+        </div>
+
+        <table class="movie-table">
+            <thead>
+                <tr>
+                    <th>Tác phẩm / Metadata</th>
+                    <th>Thể loại</th>
+                    <th>Năm</th>
+                    <th>Lượt xem</th>
+                    <th>Trạng thái</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="movie-list-body">
+                <!-- Dữ liệu JavaScript tự động điền vào đây -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/admin2.js">
+
+    </script>
+</body>
+</html>
